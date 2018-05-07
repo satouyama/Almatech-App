@@ -1,0 +1,56 @@
+<!--
+  Generated template for the DashboardPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle>
+       <ion-icon name="menu">
+       
+       </ion-icon>
+    </button>
+   <ion-title> </ion-title>
+ </ion-navbar>
+ <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-header>
+
+
+<ion-content padding>
+    <div [ngSwitch]="pet">
+        <ion-list *ngSwitchCase="'puppies'">
+          <ion-item>
+            <ion-thumbnail item-start>
+            
+            </ion-thumbnail>
+            <h2>Ruby</h2>
+          </ion-item>
+          ...
+        </ion-list>
+      
+        <ion-list *ngSwitchCase="'kittens'">
+            <ion-card>
+
+              
+                <ion-card-content>
+                  Acesse também do seu PC :
+                  www.allmatech.com.br
+                </ion-card-content>
+              
+              </ion-card>
+          
+        </ion-list>
+      </div>
+  
+</ion-content>

@@ -1,0 +1,116 @@
+<!--
+  Generated template for the CadastroClientPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><p class="p">Cadastro</p></ion-title>
+  </ion-navbar>
+   
+</ion-header>
+
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating><p>Vendedor</p></ion-label>
+        <ion-select [(ngModel)]="CadastroCliente.vendedor">
+          <ion-option value="Alexandre">Alexandre</ion-option>
+          <ion-option value="Augusto">Augusto</ion-option>
+          <ion-option value="Ester">Ester</ion-option>
+          <ion-option value="Henrique">Henrique</ion-option>
+          <ion-option value="Maria Izabel">Maria Izabel</ion-option>
+          <ion-option value="Paula">Paula</ion-option>
+          <ion-option value="Rafael">Rafael</ion-option>
+          <ion-option value="Roseli">Roseli</ion-option>
+        </ion-select>
+      </ion-item>
+ <ion-item>
+   <ion-label floating><p>Nome Fantasia</p></ion-label>
+  <ion-input type="text" [(ngModel)]="CadastroCliente.nomeFantasia"></ion-input>
+ </ion-item>
+ <ion-item>
+    <ion-label floating><p>Razão Social</p></ion-label>
+   <ion-input type="text" [(ngModel)]="CadastroCliente.razaoSocial"></ion-input>
+  </ion-item>
+  <ion-item>
+      <ion-label floating><p>CNPJ/CPF</p></ion-label>
+     <ion-input type="number" [(ngModel)]="CadastroCliente.cpfecnpj"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label floating><p>CEP</p></ion-label>
+       <ion-input type="number" [(ngModel)]="CadastroCliente.cep"></ion-input>
+      </ion-item>
+
+      <ion-grid>
+          <ion-row>
+            <ion-col width-50>
+              <ion-item>
+                <ion-label floating><p>Endereço</p></ion-label>
+                <ion-input type="text" [(ngModel)]="CadastroCliente.endereco"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col width-50>
+              <ion-item>
+                <ion-label floating><p>N</p></ion-label>
+                <ion-input type="number" [(ngModel)]="CadastroCliente.nr"></ion-input>
+              </ion-item>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      
+          <ion-grid>
+              <ion-row>
+                <ion-col width-40>
+                  <ion-item>
+                    <ion-label floating><p>Bairro</p></ion-label>
+                    <ion-input type="text" [(ngModel)]="CadastroCliente.bairro"></ion-input>
+                  </ion-item>
+                </ion-col>
+                <ion-col width-40>
+                  <ion-item>
+                    <ion-label floating><p>Complemento</p></ion-label>
+                    <ion-input type="text" [(ngModel)]="CadastroCliente.complemento"></ion-input>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+            <ion-grid>
+                <ion-row>
+                  <ion-col width-40>
+                    <ion-item>
+                      <ion-label floating><p>Telefone</p></ion-label>
+                      <ion-input type="tel" [(ngModel)]="CadastroCliente.telefone"></ion-input>
+                    </ion-item>
+                  </ion-col>
+                  <ion-col width-40>
+                    <ion-item>
+                      <ion-label floating><p>Celular</p></ion-label>
+                      <ion-input type="tel" [(ngModel)]="CadastroCliente.celular"></ion-input>
+                    </ion-item>
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              <ion-grid>
+                  <ion-row>
+                    <ion-col width-40>
+                      <ion-item>
+                        <ion-label floating><p>Cidade</p></ion-label>
+                        <ion-input type="text" [(ngModel)]="CadastroCliente.cidade"></ion-input>
+                      </ion-item>
+                    </ion-col>
+                    <ion-col width-40>
+                      <ion-item>
+                        <ion-label floating><p>UF</p></ion-label>
+                        <ion-input type="text" [(ngModel)]="CadastroCliente.uf"></ion-input>
+                      </ion-item>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+                <button ion-button full (click)="save(CadastroCliente)">Cadastrar</button>
+                 
+    
+</ion-content>
